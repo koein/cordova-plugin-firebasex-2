@@ -153,7 +153,7 @@ module.exports = function(context){
         var helper = require("./ios/helper");
         var xcodeProjectPath = helper.getXcodeProjectPath();
         var podFileModified = false;
-        helper.ensureRunpathSearchPath(context, xcodeProjectPath);
+        //helper.ensureRunpathSearchPath(context, xcodeProjectPath);
         podFileModified = helper.applyPodsPostInstall(pluginVariables, PLATFORM.IOS);
         helper.applyPluginVarsToPlists(pluginVariables, PLATFORM.IOS);
         helper.ensureEncodedAppIdInUrlSchemes(PLATFORM.IOS)
