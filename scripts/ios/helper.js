@@ -12,7 +12,8 @@ var comment = "\"Crashlytics\"";
 
 var versionRegex = /\d+\.\d+\.\d+[^'"]*/,
     firebasePodRegex = /pod 'Firebase([^']+)', '(\d+\.\d+\.\d+[^'"]*)'/g,
-    inAppMessagingPodRegEx = /pod 'FirebaseInAppMessaging', '(\d+\.\d+\.\d+[^'"]*)'/,
+    // Disable Firebase In-App Messaging entirely
+inAppMessagingPodRegEx = /THIS-WILL-NEVER-MATCH/,
     standardFirestorePodRegEx = /pod 'FirebaseFirestore', '(\d+\.\d+\.\d+[^'"]*)'/,
     googleSignInPodRegEx = /pod 'GoogleSignIn', '(\d+\.\d+\.\d+[^'"]*)'/,
     googleTagManagerPodRegEx = /pod 'GoogleTagManager', '(\d+\.\d+\.\d+[^'"]*)'/,
